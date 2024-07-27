@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Add this at the beginning of your CSS -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <label id="logo"
+        ><h1>Ayush</h1>
+        <span>Dwivedi</span></label
+      >
+      <div class="nav-div">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li>
+            <a
+              href=" https://drive.google.com/file/d/1g5pUly4kXCo5IXdAF4-5qICIZpYhf2Dx/view?usp=sharing" target="_blank" download="ayush dp.jpg"
+              
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="bars" onclick="toggleNavbar()">
+        <i class="fa fa-bars" style="font-size: 36px"></i>
+      </div>
+    </div>
+
+    <section id="home">
+      <div id="intro">
+        <div id="detail">
+          <p>Hi 👋 My name is</p>
+          <h1>Ayush Dwivedi</h1>
+          <h2>And I'm a <span class="auto-type"></span></h2>
+          <button>
+            <a href="./images/Ayush Resume.pdf" download>Resume</a>
+          </button>
+        </div>
+        <div id="intro-img">
+          <img
+            src="https://i0.wp.com/cristinagupca.com/wp-content/uploads/2020/01/web-development-e1579121521455.jpg?fit=709%2C399&ssl=1"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="about-head">About me</h2>
+      <div class="about-me">
+        <div class="pic">
+          <img src="./images/ayush dp.jpg" alt="" />
+        </div>
+        <div class="des">
+          <h2>I'm Ayush Dwivedi and I'm a <span class="autoType"></span></h2>
+          <p>
+            Dynamic and detail-oriented front-end developer intern with a month
+            of immersive experience at CodSoft. Proficient in HTML, CSS, and
+            JavaScript, showcasing expertise through impactful projects,
+            including an ecommerce website. Adept at collaborating within
+            virtual teams, demonstrating strong technical acumen and a
+            commitment to innovation in web development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div id="skill-name">
+        <p class="skill-under">Skills</p>
+        <div class="skill-detail">
+          <div class="FE">
+            <img
+              src="data:image/png;base64,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"
+              width="85px"
+              height="58px"
+              alt=""
+            />
+            <h1>Front-End</h1>
+            <p>HTML, CSS,</p>
+            <p>JavaScript, React</p>
+          </div>
+          <div class="dsa">
+            <img
+              src="https://e7.pngegg.com/pngimages/125/653/png-clipart-algorithms-data-structures-programs-data-structures-and-algorithms-introduction-to-algorithms-others-miscellaneous-angle.png"
+              alt=""
+              width="85px"
+              height="58px"
+            />
+            <h1>DSA</h1>
+            <p>String, Array, Object, 2D Array</p>
+            <p>Slider Window,Binary Search , Sorting</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tech-stack">
+        <p class="skill-under">Techstack</p>
+        <div id="main-stack">
+          <div class="stacks">
+            <div class="tech-img">
+              <img
+                src="https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg"
+                alt="html img"
+              />
+            </div>
+            <p class="stack-name">HTML</p>
+          </div>
+          <div class="stacks">
+            <div class="tech-img">
+              <img
+                src="https://chiranjeev-thapliyal.vercel.app/svg/css3.svg"
+                alt="css img"
+              />
+            </div>
+            <p class="stack-name">CSS</p>
+          </div>
+          <div class="stacks">
+            <div class="tech-img">
+              <img
+                src="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg"
+                alt="java script img"
+              />
+            </div>
+            <p class="stack-name">JavaScript</p>
+          </div>
+          <div class="stacks">
+            <div class="tech-img">
+              <img
+                src="https://chiranjeev-thapliyal.vercel.app/svg/reactjs.svg"
+                alt=" react img"
+              />
+            </div>
+            <p class="stack-name">React</p>
+          </div>
+          <div class="stacks">
+            <div class="tech-img">
+              <img src="./images/pyhon logo.png" alt="python img" />
+            </div>
+            <p class="stack-name">Python</p>
+          </div>
+        </div>
+        <p class="skill-under">Tools</p>
+        <div id="tools">
+          <div class="stacks">
+            <div class="tech-img">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+                alt="VS code img"
+              />
+            </div>
+            <p class="stack-name">Visual Studio Code</p>
+          </div>
+          <div class="stacks">
+            <div class="tech-img">
+              <img src="/images/pycharm logo.png" alt="Pycharm img" />
+            </div>
+            <p class="stack-name">Pycharm</p>
+          </div>
+          <div class="stacks">
+            <div class="tech-img">
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/postman.svg"
+                alt="postman img"
+              />
+            </div>
+            <p class="stack-name">PostMan</p>
+          </div>
+          <div class="stacks">
+            <div class="tech-img">
+              <img
+                src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+                alt="git img"
+              />
+            </div>
+            <p class="stack-name">Git</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="skill-under">Projects</p>
+      <div id="main-project-div">
+        <div class="project-div">
+          <div class="project-img">
+            <img src="./images/home page look.png" alt="bestBuy.com img" />
+          </div>
+          <h2>Bestbuy.com Clone</h2>
+          <p>
+            This website is a clone of US/Canada based E-commerce site which
+            sells all type products as we see in amazon and flipkart.
+          </p>
+          <p>Tech Stack : HTML5 | CSS3 | JavaScript | DOM</p>
+          <div class="project-button">
+            <button>
+              <a
+                href="https://github.com/ayushdwivedee/Best-Buy.com"
+                target="_blank"
+                >Git Repo</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://best-buy-clone-by-ayush-dwivedi.netlify.app/"
+                target="_blank"
+                >Live Site</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="project-div">
+          <div class="project-img">
+            <img src="./images/portfolio.png" alt="portfolio project img" />
+          </div>
+          <h2>Portfolio Project</h2>
+          <p>
+            When i was completing 1 month internship at CodSoft then i build
+            this portfolio site.
+          </p>
+          <p>Tech Stack : HTML5 | CSS3</p>
+          <div class="project-button">
+            <button>
+              <a href="https://github.com/ayushdwivedee/CODSOFT" target="_blank"
+                >Git Repo</a
+              >
+            </button>
+            <button>
+              <a href="https://portfolio-by-ayush.netlify.app/" target="_blank"
+                >Live Site</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="project-div">
+          <div class="project-img">
+            <img
+              src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq46q-0ygQV5jcqFdg3dhwI3T5qweTL3Z6UA&s "
+              alt="weather"
+            />
+          </div>
+          <h2>Weather, Instagram and YT downloder</h2>
+          <p>
+            These two app compnents can be used to find weather updates ,
+            download instagram posts and youtube titie , thumbnail & video
+            rspectively.
+          </p>
+          <p>Tech Stack : Python</p>
+          <div class="project-button">
+            <button>
+              <a
+                href="https://github.com/ayushdwivedee/project2"
+                target="_blank"
+                >Weather Git Repo</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://github.com/ayushdwivedee/project1"
+                target="_blank"
+                >Insta Git Repo</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="project-div">
+          <div class="project-img">
+            <img src="./images/Himalaya.png" alt="weather" />
+          </div>
+          <h2>Himalaya Clone</h2>
+          <p>
+            Himalaya.com (Clone) is a prominent online retailer specializing in
+            herbal healthcare and personal care products derived from
+            traditional Ayurvedic practices.
+          </p>
+          <p>Tech Stack : React and Chakra UI</p>
+          <div class="project-button">
+            <button>
+              <a
+                href="https://github.com/ayushdwivedee/himalaya"
+                target="_blank"
+                >Git Repo</a
+              >
+            </button>
+            <button>
+              <a href="https://himalaya-by-ayush.netlify.app/" target="_blank"
+                >Live Site</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="project-div">
+          <div class="project-img">
+            <img src="./images/youtube.png" alt="weather" />
+          </div>
+          <h2>Youtube Clone</h2>
+          <p>
+            It is clone of Youtube.com where users can upload, watch, and
+            interact with a vast array of video content.
+          </p>
+          <p>Tech Stack : React and Tailwind CSS</p>
+          <div class="project-button">
+            <button>
+              <a
+                href="https://github.com/ayushdwivedee/youtube-clone"
+                target="_blank"
+                >Git Repo</a
+              >
+            </button>
+            <button>
+              <a href="https://youtube-by-ayush.netlify.app/" target="_blank"
+                >Live Site</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="github">
+      <p class="skill-under1">My Github Contribution</p>
+      <div class="github-under">
+        <img class="github-img"
+          src="https://github-readme-stats.vercel.app/api?username=ayushdwivedee&theme=algolia&show_icons=true&hide_border=true&count_private=true"
+          alt="Ayush Dwivedi's Github stats"
+        />
+        <img class="github-img"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushdwivedee&theme=algolia&show_icons=true&hide_border=true&layout=compact"
+          alt="Ayush Dwivedi's Top Languages"
+        />
+        <img class="github-img"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=ayushdwivedee&theme=algolia&hide_border=true"
+          alt="Ayush Dwivedi's Github stats"
+        />
+      </div>
+    </div>
+
+    <section id="contacts">
+      <p class="skill-under1">Contact me</p>
+      <div class="main-contact">
+        <p>Get in Touch</p>
+        <div class="contact-div">
+          <a href=" mailto:ayushbhartiya1494927@gmail.com"
+            ><i class="fa fa-envelope" style="font-size: 48px; color: blue"></i
+          ></a>
+          <a href="mailto:ayushbhartiya1494927@gmail.com"
+            >ayushbhartiya1494927@gmail.com</a
+          >
+        </div>
+
+        <div class="contact-div">
+          <a href="#"
+            ><i class="fa fa-phone" style="font-size: 48px; color: blue"></i
+          ></a>
+          <a href="#">+91 8874362988</a>
+        </div>
+
+        <div class="contact-div">
+          <a href="https://www.linkedin.com/in/ayushdwivedee/"
+            ><i class="fa fa-linkedin" style="font-size: 48px; color: blue"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ayushdwivedee/ "
+            >Ayush Dwivedi</a
+          >
+        </div>
+
+        <div class="contact-div">
+          <a href=" https://github.com/ayushdwivedee "
+            ><i class="fa fa-github" style="font-size: 48px; color: blue"></i
+          ></a>
+          <a href="https://github.com/ayushdwivedee ">ayushdwivedee</a>
+        </div>
+      </div>
+    </section>
+
+    <button id="scroll-up"><a href="#top"><</a></button>
+
+    <footer>Thank you for visiting my PortFolio 💙</footer>
+  </body>
+  <!-- <script src="./index.js"></script> -->
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    let typed = new Typed(".auto-type", {
+      strings: ["React Frontend developer", "collaborator"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    });
+    let type = new Typed(".autoType", {
+      strings: ["React Frontend developer", "collaborator"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    });
+
+    function toggleNavbar() {
+      const navbarLinks = document.querySelector("#navbar ul");
+      navbarLinks.classList.toggle("active");
+      const intro = document.getElementById("detail");
+      intro.style.marginTop = "300px";
+    }
+  </script>
+</html>
