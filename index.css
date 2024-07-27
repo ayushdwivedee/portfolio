@@ -146,7 +146,7 @@ body {
   display: flex;
   gap: 100px;
   margin-top: 40px;
-  margin-left: 10px;
+  margin-left: -10px;
 }
 .pic {
   width: 350px;
@@ -195,7 +195,7 @@ body {
   gap: 50px;
   width: 90%;
   margin: auto;
-  margin-left: 130px;
+  margin-left: 10px;
 }
 .FE,
 .dsa {
