@@ -130,7 +130,7 @@ body {
 /* About Start */
 #about {
   margin-top: 50px;
-  margin-left: 80px;
+  margin-left: 120px;
   margin-right: 170px;
   height: auto;
 }
@@ -146,7 +146,7 @@ body {
   display: flex;
   gap: 100px;
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 .pic {
   width: 350px;
@@ -167,9 +167,9 @@ body {
 }
 .des p {
   color: rgb(218, 216, 216);
-  line-height: 35px;
+  line-height: 32px;
   letter-spacing: 0.8px;
-  font-size: 26px;
+  font-size: 24px;
 }
 .autoType {
   color: gold;
