@@ -256,8 +256,8 @@ body {
   height: 100%;
 }
 #projects {
-  margin-left: 120px;
-  margin-right: 170px;
+  margin-left: 20px;
+  margin-right: 70px;
 }
 #main-project-div {
   display: grid;
