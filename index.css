@@ -182,7 +182,7 @@ body {
   margin-right: 170px;
   margin-top: 60px;
 }
-.skill-under {
+.skill-under,.skill-under1 {
   text-align: center;
   color: white;
   font-size: 48px;
@@ -323,7 +323,7 @@ body {
 }
 .github-under img {
   margin-left: 20px;
-  width: 400px;
+  width: 450px;
 }
 #contacts {
   margin-top: 20px;
@@ -370,9 +370,9 @@ body {
 footer {
   background-color: rgb(98, 113, 127);
   height: 50px;
-  font-size: 20px;
+  font-size: 28px;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   padding-top: 20px;
 }
