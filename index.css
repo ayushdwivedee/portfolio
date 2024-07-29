@@ -8,7 +8,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(22, 37, 50);
 }
-#home,#about,#skills{
+#home {
   height: 690px;
 }
  
@@ -182,6 +182,9 @@ body {
 }
 
 /* Skills section css */
+#skills{
+  margin-top: 100px;
+}
 #skill-name {
   margin: auto;
   margin-left: 120px;
